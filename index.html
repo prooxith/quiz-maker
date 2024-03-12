@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>show what you can retent</title>
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="index.js"></script>
+</head>
+<body>
+	<div class="blurPart"></div>
+	<div class="practiceSession">
+		<div class="close" onclick="closeExam()">X</div>
+			<div class="examHeader">
+				<div class="title">
+					PERIODIC TABLE
+				</div>
+			</div>
+			<div class="questions">
+				<div class="questionNo">
+					<div class="questionCount">0/..</div>
+					<div class="errorCount">0</div>
+				</div>
+				<div class="question">1. Are You Crazy?</div>
+				<div class="options">
+					<div class="op1 item">1</div>
+					<div class="op2 item">2</div>
+					<div class="op3 item">3</div>
+					<div class="op4 item">4</div>
+				</div>
+			</div>
+	</div>
+	<div class="mainBody">
+		<div class="header" title="Previously Created Stuffs-">
+			Previously Created Stuffs:
+		</div>
+		<div class="lists">
+			<div class="toolbox">
+				<div class="folder button" onclick="create()">Create ++</div>
+			</div>
+			<div class="create">
+				<div class="closeCreate" onclick="closeCreation()">X</div>
+				<div class="questionTITLE edit" contenteditable="true">Quiz Title</div>
+				<div class="tables">
+					<div class="mcqs">	
+						<div class="choice choice1">
+							<div class="serial">1.</div>
+							<div placeholder="Question?" contenteditable="true" class="formatchoice qn edit"></div>
+							<div class="divider">:</div>
+							<div placeholder="ans?" contenteditable="true" class="formatchoice ans edit"></div>
+						</div>
+					</div>
+					<div onclick="addmcq()" class="makemore button">Add[Enter]</div>
+				</div>
+				<div class="lessGobutt button" onclick="addCard()">Create</div>
+			</div>
+			<div class="hierarchy">
+				<div class="itemOptions">
+					<div class="cmenuButts edit">Edit</div>
+					<div onclick="removeItem()" class="cmenuButts rem">Remove</div>
+				</div>
+				<div class="cardsArea gridLayout">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
